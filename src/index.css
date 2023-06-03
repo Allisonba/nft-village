@@ -1,19 +1,36 @@
+/* * {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+} */
 body{
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   background-color: #1b182b;
+  color: #e8e8e8;
+
 }
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding:16px 0 ;
+  padding:1.2rem 0.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b182b;
 }
 .logo{
   font-size: 1.4rem;
   font-weight: 600;
-  color: #fff;
+  color: #e8e8e8;
   text-decoration: none;
 
 }
@@ -34,9 +51,6 @@ body{
   margin: 0 15px;
   cursor: pointer;
 }
-.icon{
-  color: #fff;
-}
 .bars{
   font-size: 20px;
 }
@@ -49,8 +63,8 @@ body{
   background-color: #fa5353;
   border-radius: 50%;
   position: absolute;
-  top: 30px;
-  right:163px;
+  top: 1.5rem;
+  right:10.5rem;
 }
 .items{
   display: none;
@@ -58,17 +72,78 @@ body{
 .active{
   display: block;
   width: 100%;
-  height: 100%;
 }
 .notificationContainer{
   display: relative;
 }
 .notificationdropdown{
   position: absolute;
-  top: 15%;
-  right: 5rem;
-  width:300px;
-  height: 350px;
+  top: 4rem;
+  right:5rem;
+  width:20rem;
+  border-radius: 10px;
+ background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/f2.jpg) no-repeat;
+background-position: center;
+background-size: cover;
+object-fit: cover;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+padding: 1rem;
+}
+.message{
+  background-color: #1b182b;
   border-radius: 5px;
- background-color: yellow;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  color: #e8e8e8;
+}
+.declined, .check{
+  font-size: 13px;
+  margin-right: 1.5rem;
+}
+.declined{
+  color: red;
+}
+.check{
+  color: #faf182;
+}
+.homeContainer{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  width: 97%;
+  height: 500px;
+  background: url(./images/c2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-top: 5rem;
+}
+.homeimagewords{
+  text-transform: uppercase;
+  margin-right: 100px;
+  
+}
+.homeimagewords h1{
+  margin: 0;
+}
+.homeContainer button{
+  padding: 0.8rem;
+  background-color: #fa5353;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.homeContainer button:hover{
+  background-color: transparent;
 }
