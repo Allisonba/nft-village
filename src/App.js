@@ -20,6 +20,7 @@ const App = () => {
 			<Route exact path='/premiumnft' element={<PremiumNFTs/>}></Route>
 			<Route exact path='/contact' element={<Contact/>}></Route>
 		</Routes>
+		<Trends/>
 	</Router>
   )
 }

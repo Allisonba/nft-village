@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faDownload, faBell} from '@fortawesome/free-solid-svg-icons';
 import Notification from '../pages/Notification';
+import a1 from "../images/a1.jpg"
 
 
 const Navbar = () => {
@@ -46,6 +47,8 @@ const Navbar = () => {
 
 
       <div className={`items ${clicked && "active" }`}>
+        <div className=' unordered'>
+        <img src={a1} alt="sword"/>
         <ul className='unorderedlist'>
           <li>
             <NavLink to="/">Home</NavLink>
@@ -63,6 +66,7 @@ const Navbar = () => {
             <NavLink to="/contact">Contact</NavLink>
           </li>
        </ul>
+       </div>
 
       </div>
 

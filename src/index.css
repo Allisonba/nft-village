@@ -73,6 +73,28 @@ body{
   display: block;
   width: 100%;
 }
+.unordered{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+  height: 100vh;
+  clip-path: circle(0% at 100% 0%);
+  text-decoration: none;}
+.unordered img{
+  width: 500px ;
+  height: 500px;
+  flex-basis: 50%;
+}
+.unorderedlist{
+  
+}
+
 .notificationContainer{
   display: relative;
 }
@@ -146,4 +168,9 @@ padding: 1rem;
 }
 .homeContainer button:hover{
   background-color: transparent;
+}
+.trendsheader{
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
