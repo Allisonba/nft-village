@@ -1,0 +1,51 @@
+export const trendsdata = [
+    {
+        id:1,
+        profilepic:"../images/c6.jpg",
+        name:"Lit Naruto",
+        title: "Popular NFT",
+        ratings: 4.5,
+    },
+    {
+        id:2,
+        profilepic:"../images/x4.jpg",
+        name:"Space Trek",
+        title:"Popular NFT",
+        ratings: 3.5,
+    },
+    {
+        id:3,
+        profilepic:"../images/x7.jpg",
+        name:"Queen Black",
+        title:"Popular NFT",
+        ratings:4.1,
+    },
+    {
+        id:4,
+        profilepic:"../images/c7.jpg",
+        name:"Mutant Ape",
+        title:"Popular NFT",
+        ratings:5.0,
+    },
+    {
+        id:5,
+        profilepic:"../images/x8.jpg",
+        name:"Bored Stars",
+        title:"Popular NFT",
+        ratings:4.5,
+    },
+    {
+        id:6,
+        profilepic:"../images/x9.jpg",
+        name:"Celeb Ape",
+        title:"Popular NFT",
+        ratings:4.8,
+    },
+    {
+        id:7,
+        profilepic:"../images/x6.jpg",
+        name:"Wings",
+        title:"Popular NFT",
+        ratings:3.9,
+    },
+]

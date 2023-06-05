@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faDownload, faBell} from '@fortawesome/free-solid-svg-icons';
 import Notification from '../pages/Notification';
-import a1 from "../images/a1.jpg"
+import a1 from "../a1.jpg"
 
 
 const Navbar = () => {
@@ -35,8 +35,8 @@ const Navbar = () => {
       </div>
 
 
-      <div className='icon-container'>
-      <FontAwesomeIcon icon={clicked ? faTimes : faBars} className='icon bars' onClick={clickedHandle}/>
+      <div className='icon-container bars'>
+      <FontAwesomeIcon icon={clicked ? faTimes : faBars} className='icon' onClick={clickedHandle}/>
       </div>
 
       </div>
