@@ -21,6 +21,7 @@ const App = () => {
 			<Route exact path='/contact' element={<Contact/>}></Route>
 		</Routes>
 		<Trends/>
+		<FreeNFTs/>
 	</Router>
   )
 }

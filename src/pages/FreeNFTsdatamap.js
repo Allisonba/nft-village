@@ -1,25 +1,23 @@
 import React, { useState } from 'react'
-import {trendsdata} from "./Trendsdata"
-// import Marquee from "react-fast-marquee"
+import {freeNFTsdata} from "./FreeNFTsdata"
 
 const Trendsdatamap = () => {
-    const[trendsData, trendsDataFunc] = useState(trendsdata)
+    const[freetrendsData, freetrendsDataFunc] = useState(freeNFTsdata)
 
   return (
-    // <Marquee direction="left" behavior="scroll" pauseOnHover= "true" speed="30">
 
-    <div className='trendsdatamap'>
-        {trendsData.map((e)=>{
+    <div className='freenftmap'>
+        {freetrendsData.map((e)=>{
             const {id,profilepic,name,title,ratings} = e;
             return(
-                <div key={id} className='individual'>
+                <div key={id} className='freenftindividual'>
                    <img src={profilepic} alt='profile'/>
-                    <div className='imageoverlay'>
+                    <div className='imageoverlay overlay2'>
                       <h2>{name}</h2>
                       <h3>{title}</h3>
                       <div className='ratings'>
                       <div>{ratings}</div>
-                      <div>X</div>
+                      <div className='download'>X</div>
                       </div>
                     </div>
                 </div>
@@ -28,7 +26,6 @@ const Trendsdatamap = () => {
             )
         })}
     </div>
-    // </Marquee>
   )
 }
 
