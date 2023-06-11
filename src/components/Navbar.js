@@ -9,6 +9,7 @@ import a1 from "../a1.jpg"
 const Navbar = () => {
   const [clicked, clickedFunc] = useState(false)
   const[secClicked, secClickedFunc] = useState(false)
+  const closeMobileMenu = () => clickedFunc(false)
 
   function clickedHandle(){
   return  clickedFunc(!clicked)
@@ -51,19 +52,19 @@ const Navbar = () => {
         <img src={a1} alt="sword"/>
         <ul className='unorderedlist'>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={closeMobileMenu}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/trends">Trends</NavLink>
+            <NavLink to="/trends" onClick={closeMobileMenu}>Trends</NavLink>
           </li>
           <li>
-            <NavLink to="/freenft">Free NFTs</NavLink>
+            <NavLink to="/freenft" onClick={closeMobileMenu}>Free NFTs</NavLink>
           </li>
           <li>
-            <NavLink to="/premiumnft">Premium NFTs</NavLink>
+            <NavLink to="/premiumnft" onClick={closeMobileMenu}>Premium NFTs</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" onClick={closeMobileMenu}>Contact</NavLink>
           </li>
        </ul>
        </div>

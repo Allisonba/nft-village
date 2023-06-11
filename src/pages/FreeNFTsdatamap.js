@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import {freeNFTsdata} from "./FreeNFTsdata"
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Trendsdatamap = () => {
     const[freetrendsData, freetrendsDataFunc] = useState(freeNFTsdata)
@@ -16,8 +18,8 @@ const Trendsdatamap = () => {
                       <h2>{name}</h2>
                       <h3>{title}</h3>
                       <div className='ratings'>
-                      <div>{ratings}</div>
-                      <div className='download'>X</div>
+                      <div className="ratingcont">{ratings}</div>
+                      <div className='ratingsdownload'><FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon></div>
                       </div>
                     </div>
                 </div>

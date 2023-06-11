@@ -25,7 +25,7 @@ export const trendsdata = [
         profilepic:"../images/c7.jpg",
         name:"Mutant Ape",
         title:"Popular NFT",
-        ratings:5.0,
+        ratings:5.1,
     },
     {
         id:5,

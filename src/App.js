@@ -12,6 +12,10 @@ const App = () => {
   return (
 	<Router>
 		<Navbar/>
+		{/* <Home/>
+		<Trends/>
+		<FreeNFTs/> */}
+
 
 		<Routes>
 			<Route exact path='/' element={<Home/>}></Route>
@@ -20,8 +24,6 @@ const App = () => {
 			<Route exact path='/premiumnft' element={<PremiumNFTs/>}></Route>
 			<Route exact path='/contact' element={<Contact/>}></Route>
 		</Routes>
-		<Trends/>
-		<FreeNFTs/>
 	</Router>
   )
 }
