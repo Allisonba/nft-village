@@ -275,29 +275,57 @@ padding: 1rem;
   justify-content: space-between;
 }
 .ratingcont{
-  background-color: green;
+  background-color: #ffffff66;
   border-radius: 5px;
-  font-size: 20px;
-  width: 40px;
+  font-size: 13px;
+  width: 60px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: #ffc107;
 
 }
 .ratingsdownload{
-  background-color: green;
-  border-radius: 5px;
-  width: 40px;
-  height: 40px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-size: 13px;
 }
+.fastar{
+   padding-right: 0.5rem;
+}
+.fadown{
+  color: #dc3545;
+}
+.hovereffect{
+  transition: transform .2s;
+}
+.hovereffect:hover{
+  transform: scale(1.1); 
+}
+.navbutt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.butt{
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+}
+.linkk{
+  text-decoration: none;
+ color: #000;
 
-
+}
 
 
 

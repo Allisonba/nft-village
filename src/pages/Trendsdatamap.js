@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {trendsdata} from "./Trendsdata"
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import Marquee from "react-fast-marquee"
 
@@ -20,8 +20,8 @@ const Trendsdatamap = () => {
                       <h2>{name}</h2>
                       <h3>{title}</h3>
                       <div className='ratings'>
-                      <div className='ratingcont'>{ratings}</div>
-                      <div className='ratingsdownload'><FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon></div>
+                      <div className='ratingcont'><FontAwesomeIcon icon={faStar} className='fastar'></FontAwesomeIcon>{ratings}</div>
+                      <div className='ratingsdownload'><FontAwesomeIcon icon={faArrowDown} className='fadown'></FontAwesomeIcon></div>
                       </div>
                     </div>
                 </div>
